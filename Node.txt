@@ -1,0 +1,6 @@
+Lệnh ánh xạ từ SQL Server: 
+- Scaffold-DbContext "Server=VCS57\SQLEXPRESS;Database=PhanAnhKienNghi;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir ModelsSQL
+
+Lệnh ánh xạ từ PostGre: 
+ - Scaffold-DbContext "Server=localhost;Port=5432;UserId=postgres;Password=040601;Database=quanlyduan;" Npgsql.EntityFrameworkCore.PostgreSQL -o ModelsPostGre
+

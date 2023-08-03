@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Migrate PostGreSQL To MSSQL";
+}
+
+<div class="page-heading header-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success" role="alert">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+                <h3>Chuyển dữ liệu</h3>
+                <h4 class="text-white">PostGre SQL > MS SQL</h4>
+                <div style="display: flex; justify-content:center; align-items:center;">
+                    <div style="width: 250px;">
+                        <form method="POST">
+                            <p class="text-white mt-4" style="font-size: 14px; font-weight: bold;">Chọn bảng cần chuyển dữ liệu</p><br />
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <select class="form-select" aria-label="Default select example" name="table">
+                                <option selected>Chọn bảng</option>
+                                <option value="dm500">DM500</option>
+                                <option value="dm501">DM501</option>
+                                <option value="dm502">DM502</option>
+                                <option value="dm503">DM503</option>
+                                <option value="dm504">DM504</option>
+                                <option value="dm505">DM505</option>
+                                <option value="dm506">DM506</option>
+                                <option value="dm507">DM507</option>
+                                <option value="dm508">DM508</option>
+                                <option value="dm509">DM509</option>
+                                <option value="dm510">DM510</option>
+                            </select>
+                            <button type="submit" class="btn btn-danger mt-2">Chuyển Dữ Liệu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

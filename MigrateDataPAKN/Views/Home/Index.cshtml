@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="features">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <a asp-action="Index" asp-controller="Home">
+                <div class="item">
+                  <div class="image">
+                    <img src="~/images/featured-01.png" alt="" style="max-width: 44px;">
+                  </div>
+                  <h4>Import XlSX, CSV</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <a asp-action="MigrateMSSQLToPostGreSQL_Index" asp-controller="MSSQLToPostGreSQL">
+                <div class="item">
+                  <div class="image">
+                    <img src="~/images/change.png" alt="" style="max-width: 44px;">
+                  </div>
+                  <h4>MSSQL TO POSTGRESQL</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <a asp-action="MigratePostGreSQLToMSSQL_Index" asp-controller="PostGreSQLToMSSQL">
+                <div class="item">
+                  <div class="image">
+                    <img src="~/images/change.png" alt="" style="max-width: 44px;">
+                  </div>
+                  <h4>POSTGRESQL TO MSSQL</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <a asp-action="Index" asp-controller="Home">
+                <div class="item">
+                  <div class="image">
+                    <img src="~/images/featured-04.png" alt="" style="max-width: 44px;">
+                  </div>
+                  <h4>Easy Layout</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>

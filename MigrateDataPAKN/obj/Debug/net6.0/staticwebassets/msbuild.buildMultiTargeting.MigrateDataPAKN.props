@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MigrateDataPAKN.props" />
+</Project>
